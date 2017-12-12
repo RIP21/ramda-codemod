@@ -1,0 +1,14 @@
+{
+  "name": "ramda-codemod",
+  "version": "1.0.0",
+  "description": "Simple codemode to add R import to ramda for files using R as global.",
+  "main": "R-globals-add-explicit-import.js",
+  "repository": "https://github.com/RIP21/ramda-codemod.git",
+  "author": "@RIP21",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "jest": "^21.2.1",
+    "jscodeshift": "^0.4.0"
+  }
+}
