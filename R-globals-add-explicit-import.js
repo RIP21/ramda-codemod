@@ -8,7 +8,9 @@ module.exports = function(file, api, options) {
   const j = api.jscodeshift;
   const isContainsRImport =
     file.source.includes("import R from 'ramda'") ||
-    file.source.includes('import R from "ramda"');
+    file.source.includes('import R from "ramda"') ||
+    file.source.includes('const R = require("ramda")') ||
+    file.source.includes("const R = require('ramda')")
   if (isContainsRImport) {
     return undefined;
   } else {
